@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa83d2f2-81ed-4f6e-a870-443cb99fd5c3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1iNhQ45UEyHMMOYgNXFnBkWaqWv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211214_0001" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CalculatorTest.testAdd" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="CalculatorTest" file="$PROJECT_DIR$/tests/CalculatorTest.php" method="testAdd" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.CalculatorTest.testAdd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa83d2f2-81ed-4f6e-a870-443cb99fd5c3" name="Default Changelist" comment="" />
+      <created>1601753937646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601753937646</updated>
+      <workItem from="1601753938880" duration="2492000" />
+      <workItem from="1601757361850" duration="539000" />
+      <workItem from="1601757916328" duration="1040000" />
+      <workItem from="1601759314681" duration="1272000" />
+      <workItem from="1601802970262" duration="742000" />
+      <workItem from="1601912521723" duration="641000" />
+      <workItem from="1601915131809" duration="596000" />
+      <workItem from="1624267137729" duration="638000" />
+      <workItem from="1639493932935" duration="3012000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="274" key="GridCell.Tab.0.bottom" timestamp="1639506631213">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="274" key="GridCell.Tab.0.bottom/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639506631213" />
+    <state width="1878" height="274" key="GridCell.Tab.0.center" timestamp="1639506631212">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="274" key="GridCell.Tab.0.center/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639506631212" />
+    <state width="1878" height="274" key="GridCell.Tab.0.left" timestamp="1639506631211">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="274" key="GridCell.Tab.0.left/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639506631211" />
+    <state width="1878" height="274" key="GridCell.Tab.0.right" timestamp="1639506631212">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state width="1878" height="274" key="GridCell.Tab.0.right/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639506631212" />
+    <state x="513" y="-818" key="NewPhpClassDialog" timestamp="1639505487336">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state x="513" y="-818" key="NewPhpClassDialog/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639505487336" />
+  </component>
+</project>
