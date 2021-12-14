@@ -1,1 +1,1 @@
-{"version":1,"defects":{"CalculatorTest::testAdd":4},"times":{"CalculatorTest::testAdd":0.003}}
+{"version":1,"defects":{"CalculatorTest::testAdd":4,"Warning":6,"RobotMovementTest::testCommand":3,"RobotMovementTest::testInRoom":3},"times":{"CalculatorTest::testAdd":0.002,"Warning":0.002,"RobotMovementTest::testAdd":0.006,"RobotMovementTest::testCommand":0.004,"RobotMovementTest::testOrientation":0.007,"RobotMovementTest::testSize":0.008,"RobotMovementTest::testInRoom":0.003}}
