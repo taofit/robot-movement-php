@@ -18,11 +18,11 @@ class Validation
     }
 
     /**
-     * @param $roomSize
-     * @param $initPosition
+     * @param array $roomSize
+     * @param array $initPosition
      * @return bool
      */
-    public function isInRoom($roomSize, $initPosition): bool
+    public function isInRoom(array $roomSize, array $initPosition): bool
     {
         if (!is_numeric($initPosition[0]) || !is_numeric($initPosition[1]) || !$this->isSize($roomSize)) {
             return false;
@@ -35,31 +35,31 @@ class Validation
     }
 
     /**
-     * @param $orientation
+     * @param string $orientation
      * @return bool
      */
-    public function isOrientation($orientation): bool
+    public function isOrientation(string $orientation): bool
     {
         return preg_match('/^[NESW]$/i', $orientation);
     }
 
     /**
-     * @param $command
+     * @param string $command
      * @return bool
      */
-    public function isCommand($command): bool
+    public function isCommand(string $command): bool
     {
         return preg_match('/^[LRF]+$/i', $command);
     }
 
     /**
-     * @param $roomSize
-     * @param $initPosition
-     * @param $orientation
-     * @param $command
+     * @param array $roomSize
+     * @param array $initPosition
+     * @param string $orientation
+     * @param string $command
      * @return bool
      */
-    public function isAllInputValid($roomSize, $initPosition, $orientation, $command): bool
+    public function isAllInputValid(array $roomSize, array $initPosition, string $orientation, string $command): bool
     {
         $result = false;
         if ($this->isSize($roomSize) &&

@@ -51,7 +51,7 @@ class RobotMovement
      * @param $singleCommand
      * @return bool
      */
-    private function isTurnCmd($singleCommand): bool
+    private function isTurnCmd(string $singleCommand): bool
     {
         return in_array($singleCommand, ['L', 'R']);
     }
@@ -60,7 +60,7 @@ class RobotMovement
      * @param $command
      * @return bool
      */
-    private function isForwardCmd($command): bool
+    private function isForwardCmd(string $command): bool
     {
         return $command === 'F';
     }
