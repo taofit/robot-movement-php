@@ -8,3 +8,5 @@ Robot's movement is confined in a room size of width * depth, and robot's initia
 Obviously when robot is on the edge of room and tries to move against the wall, it will fail to move. The program will make sure the robot would not
 go outside of the room. All user's input are entered in the command line. Program can detect user's invalid input such as robot's location is not in the room, or room size contains wrong value like negative number, and it will remind user of entering the correct input.     
 It is written in vanilla PHP and in OOP way, including php unit testing.
+# to test the program
+under project folder: run `./vendor/bin/phpunit`
