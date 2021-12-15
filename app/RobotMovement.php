@@ -4,65 +4,47 @@ namespace App;
 
 class RobotMovement
 {
-    private $operands;
-    const ORIENTATION_MAP = ['N' => ['L' => 'W', 'R' => 'E'],
-        'E' => ['L' => 'N', 'R' => 'S'],
-        'S' => ['L' => 'E', 'R' => 'W'],
-        'W' => ['L' => 'S', 'R' => 'N']];
+    private $robot;
 
-    public function setOperands(array $operands)
+    /**
+     * RobotMovement constructor.
+     * @param Robot|null $robot
+     */
+    public function __construct(Robot $robot = null)
     {
-        $this->operands = $operands;
-    }
-    public function add()
-    {
-        return array_sum($this->operands);
+        $this->robot = $robot;
     }
 
     /**
-     * @param array $roomSize
-     * @param array $initLocation
-     * @param string $command
-     * @return array
+     * @param Robot $robot
      */
-    public function getFinalPosition(array $roomSize, array $initLocation, string $command): array
+    public function setRobot(Robot $robot): void
     {
-        $curOrientation = strtoupper($initLocation['orientation']);
-        $command = strtoupper($command);
-        $curLocation = ['x' => $initLocation['x'], 'y' => $initLocation['y']];
+        $this->robot = $robot;
+    }
 
-        $commandArr = str_split($command);
+    /**
+     * @param string $command
+     */
+    public function calculateFinalPosition(string $command): void
+    {
+        $commandArr = str_split(strtoupper($command));
 
         foreach ($commandArr as $singleCommand) {
             if ($this->isTurnCmd($singleCommand)) {
-                $curOrientation = self::ORIENTATION_MAP[$curOrientation][$singleCommand];
+                $this->robot->turn($singleCommand);
             } elseif ($this->isForwardCmd($singleCommand)) {
-                switch ($curOrientation) {
-                    case 'N':
-                        if ($curLocation['y'] < $roomSize['depth'] - 1) {
-                            $curLocation['y']++;
-                        }
-                        break;
-                    case 'E':
-                        if ($curLocation['x'] < $roomSize['width'] - 1) {
-                            $curLocation['x']++;
-                        }
-                        break;
-                    case 'S':
-                        if ($curLocation['y'] > 0) {
-                            $curLocation['y']--;
-                        }
-                        break;
-                    case 'W':
-                        if ($curLocation['x'] > 0) {
-                            $curLocation['x']--;
-                        }
-                        break;
-                }
+                $this->robot->move();
             }
         }
+    }
 
-        return ['x' => $curLocation['x'], 'y' => $curLocation['y'], 'orientation' => $curOrientation];
+    /**
+     * @return array
+     */
+    public function getFinalPosition(): array
+    {
+        return ['position' => $this->robot->getPosition(), 'orientation' => $this->robot->getOrientation()];
     }
 
     /**

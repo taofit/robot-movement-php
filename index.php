@@ -2,57 +2,34 @@
 require __DIR__.'/vendor/autoload.php';
 use App\RobotMovement;
 use App\Validation;
+use App\Robot;
+use App\Room;
+use App\Input;
 
-$robotMovement = new RobotMovement;
-$validation = new Validation();
+$validation = new Validation;
+$input = new Input($validation);
 
-while (true) {
-    $line = readline('Please enter room size with two integer(width, depth)'.PHP_EOL);
-    $roomSize = preg_split('/\s+/', $line);
-    if (!$validation->isSize($roomSize)) {
-        echo 'invalid room size'.PHP_EOL;
-    } else {
-        break;
-    }
-}
+$input->enterRoomSize();
+$input->enterPosition();
+$input->enterOrientation();
+$input->enterCommand();
 
-while (true) {
-    $line = readline('Please enter the starting position'.PHP_EOL);
-    $initLocation = preg_split('/\s+/', $line);
-    if (!$validation->isInRoom($roomSize, $initLocation)) {
-        echo 'invalid starting position'.PHP_EOL;
-    } else {
-        break;
-    }
-}
-while (true) {
-    $orientation = readline('Please enter the intial orientation'.PHP_EOL);
-    if (!$validation->isOrientation($orientation)) {
-        echo 'invalid orientation'.PHP_EOL;
-    } else {
-        break;
-    }
-}
+$roomSize = $input->getRoomSize();
+$position = $input->getPosition();
+$orientation = $input->getOrientation();
+$command = $input->getCommand();
 
-while (true) {
-    $command = readline('Please enter the command'.PHP_EOL);
-    if (!$validation->isCommand($command)) {
-        echo 'invalid command'.PHP_EOL;
-    } else {
-        break;
-    }
-}
+$room = new Room($roomSize);
+$robot = new Robot($position, $orientation, $room);
+$robotMovement = new RobotMovement($robot);
+$robotMovement->calculateFinalPosition($command);
+$finalPosition = $robotMovement->getFinalPosition();
 
-$processInitLocation = static function ($value) {
-    return is_numeric($value) ? (int) $value : $value;
-};
-
-list($validRoomSize['width'], $validRoomSize['depth']) = array_map('intval', $roomSize);
-list($validInitLocation['x'], $validInitLocation['y']) = array_map($processInitLocation, $initLocation);
-$validInitLocation['orientation'] = $orientation;
-
-var_dump($validInitLocation, $validRoomSize);
-$finalLocation = $robotMovement->getFinalPosition($validRoomSize, $validInitLocation, $command);
-var_dump($finalLocation);
+echo sprintf(
+    'Final position: (%d, %d), orientation: %s',
+    $finalPosition['position']['x'],
+    $finalPosition['position']['y'],
+    $finalPosition['orientation']
+);
 
 

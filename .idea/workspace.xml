@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa83d2f2-81ed-4f6e-a870-443cb99fd5c3" name="Default Changelist" comment="" />
+    <list default="true" id="fa83d2f2-81ed-4f6e-a870-443cb99fd5c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Input.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Robot.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Room.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/RobotTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/ValidationTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/RobotMovement.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/RobotMovement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/RobotMovementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/RobotMovementTest.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
@@ -58,7 +73,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20211215_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20211215_0012" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -70,34 +85,34 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHPUnit.RobotMovementTest.testInRoom">
-    <configuration name="RobotMovementTest.testAdd" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="RobotMovementTest" file="$PROJECT_DIR$/tests/RobotMovementTest.php" method="testAdd" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.ValidationTest.testAllInputValid">
+    <configuration name="RobotMovementTest.testFinalPosition" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="RobotMovementTest" file="$PROJECT_DIR$/tests/RobotMovementTest.php" method="testFinalPosition" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RobotMovementTest.testCommand" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="RobotMovementTest" file="$PROJECT_DIR$/tests/RobotMovementTest.php" method="testCommand" scope="Method" />
+    <configuration name="RobotTest.testMove" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="RobotTest" file="$PROJECT_DIR$/tests/RobotTest.php" method="testMove" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RobotMovementTest.testInRoom" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="RobotMovementTest" file="$PROJECT_DIR$/tests/RobotMovementTest.php" method="testInRoom" scope="Method" />
+    <configuration name="RobotTest.testTurn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="RobotTest" file="$PROJECT_DIR$/tests/RobotTest.php" method="testTurn" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RobotMovementTest.testOrientation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="RobotMovementTest" file="$PROJECT_DIR$/tests/RobotMovementTest.php" method="testOrientation" scope="Method" />
+    <configuration name="ValidationTest.testAllInputValid" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ValidationTest" file="$PROJECT_DIR$/tests/ValidationTest.php" method="testAllInputValid" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RobotMovementTest.testSize" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="RobotMovementTest" file="$PROJECT_DIR$/tests/RobotMovementTest.php" method="testSize" scope="Method" />
+    <configuration name="ValidationTest.testCommand" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ValidationTest" file="$PROJECT_DIR$/tests/ValidationTest.php" method="testCommand" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.RobotMovementTest.testInRoom" />
-        <item itemvalue="PHPUnit.RobotMovementTest.testSize" />
-        <item itemvalue="PHPUnit.RobotMovementTest.testOrientation" />
-        <item itemvalue="PHPUnit.RobotMovementTest.testCommand" />
-        <item itemvalue="PHPUnit.RobotMovementTest.testAdd" />
+        <item itemvalue="PHPUnit.ValidationTest.testAllInputValid" />
+        <item itemvalue="PHPUnit.ValidationTest.testCommand" />
+        <item itemvalue="PHPUnit.RobotMovementTest.testFinalPosition" />
+        <item itemvalue="PHPUnit.RobotTest.testMove" />
+        <item itemvalue="PHPUnit.RobotTest.testTurn" />
       </list>
     </recent_temporary>
   </component>
@@ -118,6 +133,8 @@
       <workItem from="1601915131809" duration="596000" />
       <workItem from="1624267137729" duration="638000" />
       <workItem from="1639493932935" duration="19102000" />
+      <workItem from="1639552782990" duration="1588000" />
+      <workItem from="1639564614150" duration="23727000" />
     </task>
     <servers />
   </component>
@@ -125,29 +142,45 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-6" y="-955" width="1720" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1639601251653">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state x="-6" y="-955" width="1720" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639601251652" />
+    <state x="667" y="-808" key="#com.intellij.ide.util.MemberChooser" timestamp="1639597854161">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state x="667" y="-808" key="#com.intellij.ide.util.MemberChooser/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639597854161" />
     <state x="631" y="-808" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1639508328714">
       <screen x="-106" y="-1055" width="1920" height="1055" />
     </state>
     <state x="631" y="-808" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639508328714" />
-    <state width="1878" height="274" key="GridCell.Tab.0.bottom" timestamp="1639523835165">
+    <state width="1878" height="274" key="GridCell.Tab.0.bottom" timestamp="1639601359243">
       <screen x="-106" y="-1055" width="1920" height="1055" />
     </state>
-    <state width="1878" height="274" key="GridCell.Tab.0.bottom/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639523835165" />
-    <state width="1878" height="274" key="GridCell.Tab.0.center" timestamp="1639523835163">
+    <state width="1878" height="274" key="GridCell.Tab.0.bottom/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639601359243" />
+    <state width="1878" height="274" key="GridCell.Tab.0.center" timestamp="1639601359242">
       <screen x="-106" y="-1055" width="1920" height="1055" />
     </state>
-    <state width="1878" height="274" key="GridCell.Tab.0.center/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639523835163" />
-    <state width="1878" height="274" key="GridCell.Tab.0.left" timestamp="1639523835162">
+    <state width="1878" height="274" key="GridCell.Tab.0.center/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639601359242" />
+    <state width="1878" height="274" key="GridCell.Tab.0.left" timestamp="1639601359241">
       <screen x="-106" y="-1055" width="1920" height="1055" />
     </state>
-    <state width="1878" height="274" key="GridCell.Tab.0.left/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639523835162" />
-    <state width="1878" height="274" key="GridCell.Tab.0.right" timestamp="1639523835164">
+    <state width="1878" height="274" key="GridCell.Tab.0.left/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639601359241" />
+    <state width="1878" height="274" key="GridCell.Tab.0.right" timestamp="1639601359242">
       <screen x="-106" y="-1055" width="1920" height="1055" />
     </state>
-    <state width="1878" height="274" key="GridCell.Tab.0.right/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639523835164" />
-    <state x="513" y="-818" key="NewPhpClassDialog" timestamp="1639511367796">
+    <state width="1878" height="274" key="GridCell.Tab.0.right/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639601359242" />
+    <state x="513" y="-818" key="NewPhpClassDialog" timestamp="1639597755622">
       <screen x="-106" y="-1055" width="1920" height="1055" />
     </state>
-    <state x="513" y="-818" key="NewPhpClassDialog/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639511367796" />
+    <state x="513" y="-818" key="NewPhpClassDialog/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639597755622" />
+    <state x="536" y="-795" width="635" height="534" key="find.popup" timestamp="1639586913057">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state x="536" y="-795" width="635" height="534" key="find.popup/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639586913057" />
+    <state x="519" y="-821" width="670" height="676" key="search.everywhere.popup" timestamp="1639582633656">
+      <screen x="-106" y="-1055" width="1920" height="1055" />
+    </state>
+    <state x="519" y="-821" width="670" height="676" key="search.everywhere.popup/-106.-1055.1920.1055/71.25.1609.1025@-106.-1055.1920.1055" timestamp="1639582633656" />
   </component>
 </project>
