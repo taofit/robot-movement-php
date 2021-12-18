@@ -21,7 +21,29 @@ class Input
         $this->validation = $validation;
     }
 
-    public function enterRoomSize(): void
+
+    public function enterAllInput()
+    {
+        $this->enterRoomSize();
+        $this->enterPosition();
+        $this->enterOrientation();
+        $this->enterCommand();
+    }
+
+    /**
+     * @return array
+     */
+    public function getAllInputParameters(): array
+    {
+        return [
+            'roomSize' => $this->getRoomSize(),
+            'position' => $this->getPosition(),
+            'orientation' => $this->getOrientation(),
+            'command' => $this->getCommand()
+        ];
+    }
+
+    private function enterRoomSize(): void
     {
         while (true) {
             $line = readline('Please enter room size with two integer(width, depth)'.PHP_EOL);
@@ -35,7 +57,7 @@ class Input
         }
     }
 
-    public function enterPosition(): void
+    private function enterPosition(): void
     {
         while (true) {
             $line = readline('Please enter the starting position'.PHP_EOL);
@@ -49,7 +71,7 @@ class Input
         }
     }
 
-    public function enterOrientation(): void
+    private function enterOrientation(): void
     {
         while (true) {
             $orientation = readline('Please enter the intial orientation'.PHP_EOL);
@@ -62,7 +84,7 @@ class Input
         }
     }
 
-    public function enterCommand(): void
+    private function enterCommand(): void
     {
         while (true) {
             $command = readline('Please enter the command'.PHP_EOL);
