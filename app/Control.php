@@ -22,7 +22,7 @@ class Control
         $this->input = new Input($validation);
     }
 
-    public function OperateRobot()
+    public function operateRobot()
     {
         $this->enterAllInput();
         $this->fetchAllInput();
