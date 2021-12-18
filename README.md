@@ -1,4 +1,4 @@
-# run the programm
+# run the program
 Hello follow the instruction as follows
 
 1. git clone the `url`
