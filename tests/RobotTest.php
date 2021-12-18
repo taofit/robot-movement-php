@@ -33,6 +33,21 @@ class RobotTest extends TestCase
         $this->assertSame($expect, $this->robot->getOrientation() === $orientation);
     }
 
+    public function testTurnInSerial(): void
+    {
+        $this->robot->turn('R');
+        $this->assertSame($this->robot->getOrientation(), 'S');
+        $this->robot->turn('R');
+        $this->assertSame($this->robot->getOrientation(), 'W');
+        $this->robot->turn('L');
+        $this->assertSame($this->robot->getOrientation(), 'S');
+        $this->robot->turn('L');
+        $this->assertSame($this->robot->getOrientation(), 'E');
+        $this->robot->turn('R');
+        $this->assertSame($this->robot->getOrientation(), 'S');
+    }
+
+
     public function testMove(): void
     {
         $this->robot->move();
