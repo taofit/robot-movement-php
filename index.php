@@ -4,6 +4,3 @@ use App\Control;
 
 $control = new Control();
 $control->operateRobot();
-
-
-

@@ -8,13 +8,14 @@ class Input
     private $position = [];
     private $orientation;
     private $command;
+    /** @var Validation */
     private $validation;
 
     /**
      * Input constructor.
      * @param $validation
      */
-    public function __construct($validation)
+    public function __construct(Validation $validation)
     {
         $this->validation = $validation;
     }
@@ -58,7 +59,7 @@ class Input
     private function enterPosition(): void
     {
         while (true) {
-            $line = readline('Please enter the starting position'.PHP_EOL);
+            $line = readline('Please enter the starting position with two integers'.PHP_EOL);
             $position = preg_split('/\s+/', $line);
             if (!$this->validation->isInRoom($this->roomSize, $position)) {
                 echo 'invalid starting position'.PHP_EOL;
@@ -72,7 +73,7 @@ class Input
     private function enterOrientation(): void
     {
         while (true) {
-            $orientation = readline('Please enter the intial orientation'.PHP_EOL);
+            $orientation = readline('Please enter the initial orientation from (E, W, S, N)'.PHP_EOL);
             if (!$this->validation->isOrientation($orientation)) {
                 echo 'invalid orientation'.PHP_EOL;
             } else {
@@ -85,7 +86,7 @@ class Input
     private function enterCommand(): void
     {
         while (true) {
-            $command = readline('Please enter the command'.PHP_EOL);
+            $command = readline('Please enter the command, which is a string consists of characters from (l, r, f)'.PHP_EOL);
             if (!$this->validation->isCommand($command)) {
                 echo 'invalid command'.PHP_EOL;
             } else {

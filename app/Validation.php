@@ -23,7 +23,7 @@ class Validation
      */
     public function isInRoom(array $roomSize, array $initPosition): bool
     {
-        if (!is_numeric($initPosition[0]) || !is_numeric($initPosition[1]) || !$this->isSize($roomSize)) {
+        if (count($initPosition) < 2 || !is_numeric($initPosition[0]) || !is_numeric($initPosition[1]) || !$this->isSize($roomSize)) {
             return false;
         }
 
