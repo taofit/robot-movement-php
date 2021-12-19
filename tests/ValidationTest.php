@@ -112,13 +112,13 @@ class ValidationTest extends TestCase
     public function inRoomProvider(): array
     {
         return [
-          [[24,34], [3,6], true],
-          [['24',34], ['23','6'], true],
+          [['24','34'], ['3','6'], true,],
+          [['24','57'], ['23','6'], true],
           [['2k','34'], ['23','6'], false],
-          [['24',34], ['23','6'], true],
-          [[24,3], ['23','0'], true],
-          [[24,3], ['23',-45], false],
-          [[24,3], ['23','58'], false],
+          [['24','34'], ['23','6'], true],
+          [['24','3'], ['23','0'], true],
+          [['24','3'], ['23','-45'], false],
+          [['24','3'], ['23','58'], false],
           [['sdf','73'], ['23','58'], false],
         ];
     }
@@ -127,12 +127,13 @@ class ValidationTest extends TestCase
     {
         return [
           [['34', '35'], ['23','6'], 'W', 'lrlfrlrflrfrlfrfl', true],
-          [['364', '35'], [0,'26'], 'e', 'lrlfrLRFLRfrlfrfl', true],
-          [['74', '45'], [0,36], 'N', 'LFRLLRFLRfrlfRFL', true],
-          [['74', '45'], [14,26], 's', 'lflrflrfLRfrlfRrfrl', true],
-          [['34', 35], [0,'26'], 'ue', 'lrlfrLRFLRfrlf9rfl', false],
-          [['34', 35], [0,'26'], 'ue', 'lrlfrLRFLRfrlf9rfl', false],
-          [['34', 365], [10,'26'], 's', '$#%RGLejg', false],
+          [['364', '35'], [0,'26'], 'e', 'lrlfrLRFLRfrlfrfl', false],
+          [['364', '35'], ['0','26'], 'e', 'lrlfrLRFLRfrlfrfl', true],
+          [['74', '45'], ['0','36'], 'N', 'LFRLLRFLRfrlfRFL', true],
+          [['74', '45'], ['14','26'], 's', 'lflrflrfLRfrlfRrfrl', true],
+          [['34', 35], [0,'26'], 'e', 'lrlfrLRFLRfrlf9rfl', false],
+          [['34', 35], ['0','26'], 'ue', 'lrlfrLRFLRfrlf9rfl', false],
+          [['34', 365], ['10','26'], 's', 'w35slflrrwnlf', false],
           [['74', '45'], [0,76], 'N', 'LFRLlflrflfrfrrrrfffrlfRFL', false]
         ];
     }

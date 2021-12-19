@@ -46,14 +46,16 @@ class RobotMovementTest extends TestCase
     public function AllValueProvider(): array
     {
         return [
-          [[12, 9], [3, 0], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', ['position' => ['x' => 4,'y' => 3], 'orientation' => 'E']],
-          [[122, 29], [3, 10], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', ['position' => ['x' => 4,'y' => 13], 'orientation' => 'E']],
-          [[5, 6], ['3', 4], 'e', 'LFFLRLFLRLF', ['position' => ['x' => 2, 'y' => 4], 'orientation' => 'S']],
-          [[12, 9], [3, 10], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
-          [[12, 9], [3, -1], 'W', 'lfrlflrflrlrugjglflflrlflrlf', false],
-          [[102, 19], [-3, 10], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
-          [[12, 9], [3, 10], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
-          [[36, -9], [3, 10], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
+          [['12', '9'], ['3', '0'], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', ['position' => ['x' => 4,'y' => 3], 'orientation' => 'E']],
+          [['122', '29'], ['3', '10'], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', ['position' => ['x' => 4,'y' => 13], 'orientation' => 'E']],
+          [['5', '6'], ['3', '4'], 'e', 'LFFLRLFLRLF', ['position' => ['x' => 2, 'y' => 4], 'orientation' => 'S']],
+          [['12', '9'], ['3', '10'], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
+          [['152', '32'], [32, 1], 'E', 'rffrlflrflrflfrflrlflrlf', false],
+          [['12', '9'], ['3', '-1'], 'W', 'lfrlflrflrlrugjglflflrlflrlf', false],
+          [['102', '19'], ['-3', '10'], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
+          [['12', '9'], ['3', '10'], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
+          [['36', '-9'], ['3', '10'], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
+          [['122', 29], ['3', '10'], 'E', 'lfrlflrflrlrlfllfflflflrlflrlf', false],
         ];
     }
 }

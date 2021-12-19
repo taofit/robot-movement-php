@@ -20,7 +20,6 @@ class Input
         $this->validation = $validation;
     }
 
-
     public function enterAllInput()
     {
         $this->enterRoomSize();
@@ -113,17 +112,17 @@ class Input
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getOrientation()
+    public function getOrientation(): string
     {
         return $this->orientation;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getCommand()
+    public function getCommand(): string
     {
         return $this->command;
     }
